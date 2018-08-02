@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f9f9f9</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="beautiful_green">#2ecc71</color>
+    <color name="beautiful_red">#d12f16</color>
+    <color name="beautiful_green_transparent">#1e2ecc71</color>
+    <color name="beautiful_red_transparent">#1ed12f16</color>
+    <color name="red_error">#ffff4444</color>
+    <color name="white">#ffffff</color>
+    <color name="medium_light_gray">#f9f9f9</color>
+    <color name="black">#FF000000</color>
+    <color name="background_green">#368525</color>
+    <color name="keyboard_green">#41bc29</color>
+    <color name="green_pressed">#85318720</color>
+    <color name="red_pressed">#85873120</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+</resources>
