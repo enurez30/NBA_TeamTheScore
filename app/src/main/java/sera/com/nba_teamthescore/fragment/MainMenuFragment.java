@@ -82,7 +82,6 @@ public class MainMenuFragment extends Fragment implements View.OnClickListener {
                 if (sortByLost == 0) {
                     sortByLost++;
                     adapter.addItems(TeamDataSource.getInstance().getTeamsByLostDescending());
-
                 } else {
                     sortByLost--;
                     adapter.addItems(TeamDataSource.getInstance().getTeamsByWLostAcending());

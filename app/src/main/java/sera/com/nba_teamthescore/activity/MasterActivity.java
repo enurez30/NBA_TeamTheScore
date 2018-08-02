@@ -105,7 +105,6 @@ public class MasterActivity extends AppCompatActivity {
                     player_object_list.add(new Player(player_object, team_object.getLong("id")));
                 }
             }
-
             TeamDataSource.getInstance().insertOrReplaceInTx(team_object_list);
             PlayerDataSource.getInstance().insertOrReplaceInTx(player_object_list);
 
@@ -155,7 +154,6 @@ public class MasterActivity extends AppCompatActivity {
 
                         }
                     }
-
             );
         }
     }

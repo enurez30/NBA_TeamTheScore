@@ -20,12 +20,11 @@ import sera.com.nba_teamthescore.objects.Player;
 import sera.com.nba_teamthescore.objects.Team;
 
 import static sera.com.nba_teamthescore.utils.Utils.PLAYER_IMG_URL;
-import static sera.com.nba_teamthescore.utils.Utils.SEPERATOR;
+import static sera.com.nba_teamthescore.utils.Utils.SEPARATOR;
 
 public class TeamPageRecyclerAdapter extends RecyclerView.Adapter<TeamPageRecyclerAdapter.ViewHolder> {
 
     private Context context;
-    private LayoutInflater mLayoutInflater;
     private List<Player> playerList;
 
     public TeamPageRecyclerAdapter(Context context, Team team) {
@@ -37,7 +36,7 @@ public class TeamPageRecyclerAdapter extends RecyclerView.Adapter<TeamPageRecycl
     @NonNull
     @Override
     public TeamPageRecyclerAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        mLayoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater mLayoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = Objects.requireNonNull(mLayoutInflater).inflate(R.layout.team_page_single_line, viewGroup, false);
         return new TeamPageRecyclerAdapter.ViewHolder(view);
     }
@@ -79,7 +78,7 @@ public class TeamPageRecyclerAdapter extends RecyclerView.Adapter<TeamPageRecycl
             number.setText(String.valueOf(playerList.get(position).getPlayerNumber()));
 
             Picasso.with(context)
-                    .load(PLAYER_IMG_URL + playerList.get(position).getLastName() + SEPERATOR + playerList.get(position).getFirstName())
+                    .load(PLAYER_IMG_URL + playerList.get(position).getLastName() + SEPARATOR + playerList.get(position).getFirstName())
                     .error(R.drawable.no_photo_250px_new)
                     .into(player_pic);
 

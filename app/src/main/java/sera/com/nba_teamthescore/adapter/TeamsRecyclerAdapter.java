@@ -26,7 +26,6 @@ import static sera.com.nba_teamthescore.utils.Utils.SVG_URL;
 public class TeamsRecyclerAdapter extends RecyclerView.Adapter<TeamsRecyclerAdapter.ViewHolder> {
 
     private Context context;
-    private LayoutInflater mLayoutInflater;
     private List<Team> teamList;
     private MainMenuFragment parent;
 
@@ -40,7 +39,7 @@ public class TeamsRecyclerAdapter extends RecyclerView.Adapter<TeamsRecyclerAdap
     @NonNull
     @Override
     public TeamsRecyclerAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        mLayoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater mLayoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = Objects.requireNonNull(mLayoutInflater).inflate(R.layout.team_single_line, viewGroup, false);
         return new TeamsRecyclerAdapter.ViewHolder(view);
     }

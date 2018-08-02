@@ -18,7 +18,6 @@ public class NBA_TeamTheScoreApplication extends Application {
             @Override
             public void uncaughtException(Thread thread, Throwable throwable) {
                 // here implementation of uncaught exception
-                Log.d("", "");
             }
         });
     }
